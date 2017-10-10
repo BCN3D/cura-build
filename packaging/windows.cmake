@@ -53,23 +53,23 @@ endif()
 
 include(CPackComponent)
 
-cpack_add_component(_cura DISPLAY_NAME "Cura Executable and Data Files" REQUIRED)
+cpack_add_component(_cura DISPLAY_NAME "BCN3D Cura Executable and Data Files" REQUIRED)
 cpack_add_component(vcredist DISPLAY_NAME "Install Visual Studio 2015 Redistributable")
 cpack_add_component(arduino DISPLAY_NAME "Install Arduino Drivers")
 
 set(CPACK_GENERATOR "NSIS")
-set(CPACK_PACKAGE_NAME "Cura")
-set(CPACK_PACKAGE_VENDOR "Ultimaker")
+set(CPACK_PACKAGE_NAME "BCN3D Cura")
+set(CPACK_PACKAGE_VENDOR "BCN3D Technologies")
 set(CPACK_PACKAGE_VERSION_MAJOR ${CURA_VERSION_MAJOR})
 set(CPACK_PACKAGE_VERSION_MINOR ${CURA_VERSION_MINOR})
 set(CPACK_PACKAGE_VERSION_PATCH ${CURA_VERSION_PATCH})
 set(CPACK_PACKAGE_VERSION ${CURA_VERSION})
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Cura 3D Printing Software")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "BCN3D Cura 3D Printing Software")
 set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_SOURCE_DIR}/LICENSE)
-set(CPACK_PACKAGE_CONTACT "Arjen Hiemstra <a.hiemstra@ultimaker.com>")
+set(CPACK_PACKAGE_CONTACT "Eloi Pardo <epardo@fundaciocim.org>")
 
-set(CPACK_PACKAGE_EXECUTABLES Cura "Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}.${CURA_VERSION_PATCH}")
-set(CPACK_PACKAGE_INSTALL_DIRECTORY "Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}")
+set(CPACK_PACKAGE_EXECUTABLES BCN3D_Cura "BCN3D Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}.${CURA_VERSION_PATCH}")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "BCN3D Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}")
 
 # CPackNSIS
 set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
@@ -77,10 +77,10 @@ set(CPACK_NSIS_EXECUTABLES_DIRECTORY ".")
 set(CPACK_NSIS_INSTALLED_ICON_NAME "Cura.ico")
 set(CPACK_NSIS_MENU_LINKS
     "https://ultimaker.com/en/support/software" "Cura Online Documentation"
-    "https://github.com/ultimaker/cura" "Cura Development Resources"
+    "https://github.com/BCN3D/cura" "BCN3D Cura Development Resources"
 )
 
-set(CPACK_NSIS_INSTALLER_MUI_FINISHPAGE_RUN_CODE "!define MUI_FINISHPAGE_RUN \\\"$WINDIR\\\\explorer.exe\\\"\n!define MUI_FINISHPAGE_RUN_PARAMETERS \\\"$INSTDIR\\\\Cura.exe\\\"")
+set(CPACK_NSIS_INSTALLER_MUI_FINISHPAGE_RUN_CODE "!define MUI_FINISHPAGE_RUN \\\"$WINDIR\\\\explorer.exe\\\"\n!define MUI_FINISHPAGE_RUN_PARAMETERS \\\"$INSTDIR\\\\BCN3D_Cura.exe\\\"")
 
 # Needed to call the correct vcredist_x["32", "64"] executable
 # TODO: Use a variable, which is already known. For example CPACK_SYSTEM_NAME -> "win32"

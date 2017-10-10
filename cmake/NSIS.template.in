@@ -542,19 +542,19 @@ FunctionEnd
 !include "FileAssociation.nsh"
 
 Section /o "Open 3MF files with Cura"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".3mf" "Cura.model.3MF"
+    ${RegisterExtension} "$INSTDIR\BCN3D_Cura.exe" ".3mf" "Cura.model.3MF"
 SectionEnd
 
 Section /o "Open OBJ files with Cura"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".obj" "Cura.model.OBJ"
+    ${RegisterExtension} "$INSTDIR\BCN3D_Cura.exe" ".obj" "Cura.model.OBJ"
 SectionEnd
 
 Section "Open STL files with Cura"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".stl" "Cura.model.STL"
+    ${RegisterExtension} "$INSTDIR\BCN3D_Cura.exe" ".stl" "Cura.model.STL"
 SectionEnd
 
 Section /o "Open X3D files with Cura"
-    ${RegisterExtension} "$INSTDIR\Cura.exe" ".x3d" "Cura.model.X3D"
+    ${RegisterExtension} "$INSTDIR\BCN3D_Cura.exe" ".x3d" "Cura.model.X3D"
 SectionEnd
 
 ;--------------------------------

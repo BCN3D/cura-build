@@ -107,17 +107,17 @@ build_options = {
 executables = [
     Executable(script="@EXTERNALPROJECT_INSTALL_PREFIX@/bin/cura_app.py",
                base="Win32GUI",
-               targetName = "Cura.exe",
+               targetName = "BCN3D_Cura.exe",
                icon="@CMAKE_SOURCE_DIR@/packaging/cura.ico"
                )
 ]
 
 setup(
-    name = "Cura",
+    name = "BCN3D Cura",
     version = "@CURA_VERSION_MAJOR@.@CURA_VERSION_MINOR@.@CURA_VERSION_PATCH@",
     description = "3D Printing Software",
-    author = "Ultimaker B.V.",
-    url = "http://software.ultimaker.com/",
+    author = "BCN3D Technologies",
+    url = "http://www.bcn3dtechnologies.com/en/3d-printer/bcn3d-cura",
     license = "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL)",
 
     options = {"build_exe": build_options},
