@@ -61,6 +61,10 @@ build_options = {
         ("@CMAKE_PREFIX_PATH@/lib/plugins", "qt/plugins"),
         ("@CMAKE_PREFIX_PATH@/lib/qml", "qt/qml"),
     ],
+    "includes": [
+        "numpy.core._methods",
+        "numpy.lib.format"
+    ],
     "optimize": 2,
     "bin_path_includes": [
         "/lib",
@@ -123,7 +127,7 @@ executables = [
 ]
 
 setup(
-    name = "Cura",
+    name = "BCN3D Cura",
     version = "@CURA_MAJOR_VERSION@.@CURA_MINOR_VERSION@.@CURA_PATCH_VERSION@",
     author = "Ultimaker B.V.",
     url="http://software.ultimaker.com/",
