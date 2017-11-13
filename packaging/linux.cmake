@@ -46,7 +46,7 @@ add_custom_command(
     COMMENT "Copying AppRun executable..."
 )
 
-set(APPIMAGE_FILENAME "Cura-${CURA_VERSION}.AppImage")
+set(APPIMAGE_FILENAME "BCN3D_Cura-${CURA_VERSION}.AppImage")
 
 add_custom_command(
     TARGET packaging POST_BUILD
