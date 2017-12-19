@@ -983,14 +983,6 @@ Function .onInit
   StrCmp "@CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL@" "ON" 0 inst
   IfSilent inst 0
 
-  !insertmacro uninstallVersion "Cura 14.12" "Cura_14.12.1" "14121"
-  !insertmacro uninstallVersion "Cura 15.04" "Cura_15.04.4" "15044"
-  !insertmacro uninstallVersion "Cura 15.04" "Cura_15.04.5" "15045"
-  !insertmacro uninstallVersion "Cura 15.04" "Cura_15.04.6" "15046"
-  !insertmacro uninstallVersion "Cura 2.1" "Cura 2.1" "21"
-  !insertmacro uninstallVersion "Cura 2.3" "Cura 2.3" "23"
-  !insertmacro uninstallVersion "Cura 2.4" "Cura 2.4" "24"
-  !insertmacro uninstallVersion "Cura 2.5" "Cura 2.5" "25"
   !insertmacro uninstallVersion "Cura" "@CPACK_PACKAGE_INSTALL_REGISTRY_KEY@" "latest"
 
 inst:
