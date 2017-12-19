@@ -1,4 +1,4 @@
-set(OSX_CODESIGN_IDENTITY "Mac Developer" CACHE STRING "Identity to use for code signing")
+set(OSX_CODESIGN_IDENTITY "Developer ID" CACHE STRING "Identity to use for code signing")
 
 add_custom_command(
     TARGET signing PRE_BUILD
@@ -8,11 +8,11 @@ add_custom_command(
 
 add_custom_command(
     TARGET signing PRE_BUILD
-    COMMAND codesign -s ${OSX_CODESIGN_IDENTITY} --deep Cura.app
+    COMMAND codesign -s ${OSX_CODESIGN_IDENTITY} --deep 'BCN3D_Cura.app'
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/build
 )
 
-install(DIRECTORY ${CMAKE_BINARY_DIR}/build/Cura.app DESTINATION "." USE_SOURCE_PERMISSIONS)
+install(DIRECTORY ${CMAKE_BINARY_DIR}/build/BCN3D_Cura.app DESTINATION "." USE_SOURCE_PERMISSIONS)
 
 set(CPACK_PACKAGE_NAME "BCN3D Cura")
 set(CPACK_PACKAGE_VENDOR "BCN3D Technologies")
