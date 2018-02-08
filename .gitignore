@@ -30,7 +30,8 @@ cmake_install.cmake
 __pycache__
 docs/html
 *.log
-build
+build*/
+install_dir*/
 *.mo
 resources/i18n/en
 resources/i18n/x-test
