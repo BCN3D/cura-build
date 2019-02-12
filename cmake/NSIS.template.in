@@ -985,6 +985,10 @@ Function .onInit
 
   !insertmacro uninstallVersion "BCN3D Cura 1.0" "BCN3D Cura 1.0" "10"
   !insertmacro uninstallVersion "BCN3D Cura 1.1" "BCN3D Cura 1.1" "11"
+  !insertmacro uninstallVersion "BCN3D Cura 2.0" "BCN3D Cura 2.0" "20"
+  !insertmacro uninstallVersion "BCN3D Cura 2.1" "BCN3D Cura 2.1" "21"
+  !insertmacro uninstallVersion "BCN3D Cura 2.1.3" "BCN3D Cura 2.1.3" "213"
+  !insertmacro uninstallVersion "BCN3D Cura 2.1.4" "BCN3D Cura 2.1.4" "214"
   !insertmacro uninstallVersion "BCN3D Cura" "@CPACK_PACKAGE_INSTALL_REGISTRY_KEY@" "latest"
 
 inst:
