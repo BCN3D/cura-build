@@ -1,7 +1,7 @@
 option(CURA_ENABLE_DEBUGMODE "Enable crash handler and other debug options in Cura" OFF)
 
 ExternalProject_Add(Cura
-    GIT_REPOSITORY https://github.com/ultimaker/Cura
+    GIT_REPOSITORY https://github.com/BCN3D/Cura
     GIT_TAG origin/${CURA_BRANCH_OR_TAG}
     GIT_SHALLOW 1
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${EXTERNALPROJECT_INSTALL_PREFIX}
