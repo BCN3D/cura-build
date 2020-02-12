@@ -112,8 +112,11 @@ build_options = {
         (PyQt5.__path__[0] + "/Qt/qml/QtQml", "qml/QtQml"),
         (PyQt5.__path__[0] + "/Qt/qml/QtQuick", "qml/QtQuick"),
         (PyQt5.__path__[0] + "/Qt/qml/QtQuick.2", "qml/QtQuick.2"),
+        # cacert.pem for python requests
+        ("@CMAKE_PREFIX_PATH@/lib/site-packages/certifi/cacert.pem", "")
     ],
     "excludes": [ ],
+    "includes": ["idna.idnadata"],
     "replace_paths": [("*", "")],
 }
 
