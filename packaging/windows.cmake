@@ -1,4 +1,4 @@
-find_package(cx_freeze 5.0 REQUIRED)
+find_package(cx_Freeze 5.0 REQUIRED)
 
 configure_file(${CMAKE_CURRENT_LIST_DIR}/setup_win32.py.in setup.py @ONLY)
 add_custom_target(build_bundle)
@@ -66,7 +66,7 @@ set(CPACK_PACKAGE_VERSION_PATCH ${CURA_VERSION_PATCH})
 set(CPACK_PACKAGE_VERSION ${CURA_VERSION})
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "BCN3D Cura 3D Printing Software")
 set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_SOURCE_DIR}/packaging/cura_license)
-set(CPACK_PACKAGE_CONTACT "Eloi Pardo <epardo@fundaciocim.org>")
+set(CPACK_PACKAGE_CONTACT "Marc Bermejo <mbermejo@bcn3d.com>")
 
 set(CPACK_PACKAGE_EXECUTABLES BCN3D_Cura "BCN3D Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}.${CURA_VERSION_PATCH}")
 set(CPACK_PACKAGE_INSTALL_DIRECTORY "BCN3D Cura ${CURA_VERSION_MAJOR}.${CURA_VERSION_MINOR}")
